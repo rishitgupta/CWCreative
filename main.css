@@ -1,0 +1,213 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+    background-color: black;
+    padding-right: 0;
+    margin-right: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+div {
+  margin: 0;
+}
+
+h1 {
+  padding: 0 10px;
+  display: inline;
+  font-family: 'Simplifica';
+  font-size: 56px;
+  letter-spacing: 2px;
+}
+
+section p {
+  padding: 20px 0 10px 0;
+  font-size: 24px;
+  font-family: 'Proxima Nova';
+  letter-spacing: 1.25px;
+}
+
+
+/* Setting up the navigation bar */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  color: white;
+}
+
+nav a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Proxima Nova';
+  padding: 0 30px;
+  height: 100%;
+  border-top: 3.5px solid black;
+  transition: border-top 0.5s ease-out;
+}
+
+nav a:hover {
+  border-top: 3.5px solid white;
+}
+
+
+/* landing */
+.landing {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+
+#particles-js canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.intro {
+  padding: 5%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border: 3px solid black;
+  transition: all 0.25s ease-in-out;
+}
+
+.intro:hover {
+  border: 3px solid white;
+}
+
+#heading {
+  font-family: 'Proxima Nova';
+  color: white;
+  font-size: 64px;
+  letter-spacing: 1.5px;
+}
+
+/* paragraphs */
+.white-para {
+  padding: 7.5% 10%;
+  background-color: white;
+  color: black;
+}
+
+.black-para {
+  padding: 7.5% 10%;
+  background-color: black;
+  color: white;
+}
+
+.white-para .wrapper {
+  border-bottom: 3px solid white;
+  transition: all 0.5s ease-in-out;
+}
+
+.white-para .wrapper:hover {
+  border-bottom: 3px solid black;
+}
+
+.black-para .wrapper {
+  border-bottom: 3px solid black;
+  transition: all 0.5s ease-in-out;
+}
+
+.black-para .wrapper:hover {
+  border-bottom: 3px solid white;
+}
+
+/* footer */
+footer {
+  display: block;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  background-color: #22313F;
+  color: white;
+  height: 60vh;
+  width: 100%;
+}
+
+.perspective-text {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  margin: 0 75% 0 40%;
+  font-family: 'Proxima Nova';
+  font-size: 50px;
+  letter-spacing: -2px;
+  font-weight: 900;
+}
+
+.perspective-line {
+  height: 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+footer p {
+  margin: 0;
+  height: 58px;
+  line-height: 50px;
+  transition: all 0.35s ease;
+}
+
+.perspective-line:nth-child(odd) {
+  transform: skew(60deg, -30deg) scaleY(0.6);
+}
+
+.perspective-line:nth-child(even) {
+  transform: skew(0deg, -30deg) scaleY(1.3);
+}
+
+.perspective-text:hover p {
+  transform: translate(0, -50px);
+}
+
+.perspective-line:nth-child(1) {
+  left: 29px;
+}
+
+.perspective-line:nth-child(2) {
+  left: 58px;
+}
+
+.perspective-line:nth-child(3) {
+  left: 87px;
+}
+
+.perspective-line:nth-child(4) {
+  left: 116px;
+}
+
+.perspective-line:nth-child(5) {
+  left: 145px;
+}
+
+.perspective-line:nth-child(6) {
+  left: 174px;
+}
+
+@font-face {
+  font-family: 'Simplifica';
+  src: url(_fonts/Simplifica.ttf);
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url(_fonts/ProximaNova-Regular.woff);
+}

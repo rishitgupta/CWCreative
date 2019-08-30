@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="text/css" rel="stylesheet" href="main.css">
+    <link type="image/ico" rel="icon" href="_media/favicon.ico">
+    <title>Project Luna</title>
+  </head>
+  <body>
+
+    <nav>
+      <a href="#about" class="links">About</a>
+      <a href="#science" class="links">Science</a>
+      <a href="#model" class="links">Model</a>
+      <a href="#applications" class="links">Applications</a>
+      <a href="#video" class="links">Promo</a>
+    </nav>
+
+    <section class="landing">
+      <div id="particles-js"></div>
+      <div class="intro">
+        <img src="_media/logo-f.png" alt="logo" height="200px" width="200px">
+        <br><br>
+        <p id="heading">Project Luna.</p>
+      </div>
+    </section>
+
+    <section class="white-para">
+      <a name="about"><h1 class="wrapper">About</h1></a>
+      <p>Luna is an advanced 3D gesture recognition system which has been engineered to fit inside the palm of your hand along with a programmable micro-computer with snuggly space left to spare. The actual gesture recognition chip has been miniaturized to the size of a thumb, and can be removed from the prototyping board to be used in the user's custom projects.</p>
+      <p>Imagine an invisible button (and so much more) between your thumb and index fingers – you can press it by tapping your fingers together. Imagine grabbing and pulling a virtual slider in thin air, or unlocking a door with a virtual key. These are the kinds of interactions we are developing and imagining.</p>
+    </section>
+
+    <section class="black-para">
+      <a name="science"><h1 class="wrapper">The Science Behind It</h1></a>
+      <img src="_media/proj.jpg" alt="Project Image" style="float:right;width:357.5px;height:214.5px;margin:5%;">
+      <p>The Luna software architecture consists of a generalized gesture recognition pipeline which is hardware agnostic and can work with different types of radar. The pipeline implements several stages of signal abstraction: from the raw radar data to signal transformations, core and abstract machine learning features, detection and tracking, gesture probabilities, and finally UI tools to interpret gesture controls.</p>
+      <p>The custom-built Soli chip greatly reduces radar system design complexity and power consumption compared to our initial prototypes. We developed two modulation architectures: a Frequency Modulated Continuous Wave (FMCW) radar and a Direct-Sequence Spread Spectrum (DSSS) radar. Both chips integrate the entire radar system into the package, including multiple beamforming antennas that enable 3D tracking and imaging with no moving parts.</p>
+    </section>
+
+    <section class="white-para">
+      <a name="model"><h1 class="wrapper">3D Demo</h1></a><br>
+      <iframe src="https://3dwarehouse.sketchup.com/embed/6dcfcd4f-58bd-41f1-a8d0-1d9e0cb871b9" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="580px" height="326px" style="margin:5% 70% 0 30%;" allowfullscreen></iframe>
+    </section>
+
+    <section class="black-para">
+      <a name="applications"><h1 class="wrapper">Applications</h1></a>
+      <p>After 48 hours of concept and product development, our team has been able to create a solution which is economical, eco-friendly and easy to incorporate in other projects. We have designed the gesture recognition chip to work with other boards just like any other sensor array.</p>
+      <p>The Luna chip can be integrated within wearables, phones, computers, watches, tablets, televisions, gaming consoles and every other mainstream device. Luna has no moving parts, it fits onto a chip and consumes little energy. It is not affected by light conditions and it works through most materials.</p>
+      <p>The possibilities are endless. With the Luna chip, you can practically do almost every simple everyday task within the power of your palm. You can unlock or lock a door, you can control the television, you can manage the music system, you can pretty much use your computer. The power resides with you.</p>
+    </section>
+
+    <section class="white-para">
+      <a name="video"><h1 class="wrapper">Promotional Video</h1></a>
+      <video width="1440px" height="810px" style="margin:2.5%;" controls>
+        <source src="_media/finalvid.mp4" type="video/mp4">
+      </video>
+    </section>
+
+    <footer>
+      <div class="perspective-text">
+        <div class="perspective-line">
+          <p></p>
+          <p>MADE</p>
+        </div>
+        <div class="perspective-line">
+          <p>MADE</p>
+          <p>WITH</p>
+        </div>
+        <div class="perspective-line">
+          <p>WITH</p>
+          <p>LOVE</p>
+        </div>
+        <div class="perspective-line">
+          <p>LOVE</p>
+          <p>BY</p>
+        </div>
+        <div class="perspective-line">
+          <p>BY</p>
+          <p style="color:#8CC63F;">NODE</p>
+        </div>
+        <div class="perspective-line">
+          <p style="color:#8CC63F;">NODE</p>
+          <p></p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Declaration of scripts -->
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
